@@ -8,12 +8,12 @@ app.use(bodyparser.urlencoded({ extended: true }));
 
 
 
-app.get("/weatherproject", function (req, res) {
+app.get("/", function (req, res) {
 
-    res.sendFile(__dirname + "/weatherproject/index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/weatherproject", function (req, res) {
+app.post("/", function (req, res) {
 
     const query = req.body.cityname;
     const apikey = "b4318ca79406f37004f937cc5bdd7680";
