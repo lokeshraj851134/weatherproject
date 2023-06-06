@@ -10,7 +10,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
 
-    res.sendFile("/weatherproject/index.html");
+    res.sendFile(__dirname + "weatherproject/index.html");
 });
 
 app.post("/", function (req, res) {
