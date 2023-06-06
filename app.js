@@ -44,5 +44,5 @@ app.post("/", function (req, res) {
 
 
 app.listen(port, function () {
-    console.log("server is running on port 3000");
+    console.log("server is running on port ${port}");
 })
